@@ -1,0 +1,23 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+  
+    if (loginForm) {
+      loginForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        alert(`Login com: ${email}`); // Substituir por chamada à API
+      });
+    }
+  
+    if (registerForm) {
+      registerForm.addEventListener('submit', e => {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        alert(`Registrando: ${email}`); // Substituir por chamada à API
+      });
+    }
+  });
+  

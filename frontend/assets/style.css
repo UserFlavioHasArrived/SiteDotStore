@@ -1,0 +1,154 @@
+Aqui está seu **código CSS reorganizado, limpo e com o botão atualizado** (com borda e tom suave que combina com fundo branco). Juntei os estilos repetidos e centralizei as informações conforme você pediu:
+
+```css
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #b30000;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.navbar {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Botões */
+.btn,
+button {
+  background-color: #ffffff;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+  background-color: #f2f2f2;
+  color: #000;
+  border-color: #999;
+}
+
+/* Formulários */
+.form-container, .login-form {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Produtos */
+main {
+  background-color: #d9d9d9;
+  padding: 2rem 1rem 4rem;
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+}
+
+.product {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.product h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.product p {
+  margin: 0.5rem 0;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
